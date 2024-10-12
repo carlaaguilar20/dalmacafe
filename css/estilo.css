@@ -1,0 +1,142 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+   background-image: url(../img/fondocoffee3.avif);
+    background-size: cover;
+    font-family: "Caveat", cursive;
+}
+ header{
+    background-color:rgb(114, 51, 25) ;
+ }
+
+h1{
+    color: beige;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin: 10px;
+    padding: 10px;
+}
+nav{
+    background-color: sienna;
+    padding: 20px;
+    list-style: none;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    display: flex;
+  }
+  nav a{
+    color: white;
+    margin: 10PX;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  nav li :hover{
+    background-color: rgb(128, 58, 27);
+    color: darkgoldenrod;
+    border-radius: 20px;
+
+  }
+ h2{
+    background-color: sienna;
+    opacity: 90%;
+    color: beige;
+    font-size: larger;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    margin: 10px;
+    padding: 10px;
+    font-size: 2rem;
+ }
+ p{
+    background-color: sienna;
+    color: beige;
+    font-size: larger;
+    margin: 10px;
+    padding: 10px;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 1.5rem;
+ }
+ h3{
+    color: beige;
+    margin: 5px;
+    padding: 5px;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 1.7rem;
+ }
+ h4{
+    color: rgb(128, 58, 27);
+    margin: 5px;
+    padding: 5px;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 2rem;
+ }
+ form{
+    background-color:rgb(168, 121, 88) ;
+    opacity: 90%;
+    color:rgb(128, 58, 27) ;
+    font-weight: bolder;
+    font-size: larger;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 140%;
+
+ }
+ .formularioA{
+    background-color: beige;
+    border: 20% chocolate;
+    margin: 10px;
+    padding: 10px;
+ }
+ .cafeI{
+    margin: 5px;
+    padding: 5px;
+    background-image: url(../img/cafecorazon.jpg);
+    background-size: cover;
+    width: 100%;
+ }
+ 
+ img{
+    width: 80px;
+ }
+ .productosA{
+  justify-content: center;
+  margin: 5px;
+  padding: 5%;
+  width: 50%;
+ }
+
+ div{
+    background-color:rgb(114, 51, 25) ;
+    text-align: center;
+    margin: 10px;
+    width: 50%;
+    
+ }
+ .carrito{
+    display: flex;
+    flex-direction: row;
+ }
+ 
+ footer{
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    padding: 5px;
+ }
