@@ -103,14 +103,10 @@ nav{
     margin: 10px;
     padding: 10px;
  }
- .cafeI{
-    margin: 5px;
-    padding: 5px;
-    background-image: url(../img/cafecorazon.jpg);
-    background-size: cover;
-    width: 100%;
- }
- 
+.cafeI{
+   width: auto;
+   background-color: beige;
+}
  img{
     width: 80px;
  }
