@@ -5,7 +5,7 @@
 }
 
 body{
-   background-image: url(../img/fondocoffee3.avif);
+   background-image: url(../img/fondocoffeed.avif);
     background-size: cover;
     font-family: "Caveat", cursive;
 }
@@ -124,6 +124,13 @@ nav{
     width: 50%;
     
  }
+  .cultivocafe{
+  display: flex;
+  width: auto;
+  
+}
+
+
  .carrito{
     display: flex;
     flex-direction: row;
