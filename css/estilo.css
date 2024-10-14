@@ -18,20 +18,21 @@ h1{
     text-align: center;
     font-optical-sizing: auto;
     font-style: normal;
-    margin: 10px;
-    padding: 10px;
+    padding: 20px;
 }
 nav{
-    background-color: sienna;
-    padding: 20px;
+   background-color: rgb(204, 178, 137);
     list-style: none;
     font-optical-sizing: auto;
     font-weight: bolder;
     font-style: normal;
     display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   opacity: 95%;
   }
   nav a{
-    color: white;
+    color: rgb(114, 51, 25) ;
     margin: 10PX;
     padding: 10px;
     text-decoration: none;
@@ -51,7 +52,6 @@ nav{
     font-optical-sizing: auto;
     font-weight: bolder;
     font-style: normal;
-    margin: 10px;
     padding: 10px;
     font-size: 2rem;
  }
@@ -59,7 +59,6 @@ nav{
     background-color: sienna;
     color: beige;
     font-size: larger;
-    margin: 10px;
     padding: 10px;
     font-optical-sizing: auto;
     font-weight: bolder;
@@ -68,78 +67,106 @@ nav{
  }
  h3{
     color: beige;
-    margin: 5px;
     padding: 5px;
     font-optical-sizing: auto;
     font-weight: bolder;
     font-style: normal;
     font-size: 1.7rem;
+    
  }
  h4{
     color: rgb(128, 58, 27);
-    margin: 5px;
     padding: 5px;
     font-optical-sizing: auto;
     font-weight: bolder;
     font-style: normal;
     font-size: 2rem;
  }
+
  form{
     background-color:rgb(168, 121, 88) ;
     opacity: 90%;
     color:rgb(128, 58, 27) ;
     font-weight: bolder;
     font-size: larger;
-    margin: 10px;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 140%;
+    width: 50%;
+    align-items: center;
+  
 
  }
  .formularioA{
     background-color: beige;
     border: 20% chocolate;
-    margin: 10px;
     padding: 10px;
+    width: 60%;
+    margin: 5px;
  }
-.cafeI{
-   width: auto;
+
+ .formI{
    background-color: beige;
-}
+   border: 20px chocolate;
+   padding: 10px;
+   width: 20%;
+ }
+
+
  img{
-    width: 80px;
+    width: 180px;
  }
  .productosA{
-  justify-content: center;
-  margin: 5px;
   padding: 5%;
-  width: 50%;
+  width: 100%;
  }
-
+ .imagenD{
+   width: 50%;
+ }
+.cafeI{
+   width: 100%;
+   height: 100%;
+  background-color: beige;
+}
  div{
     background-color:rgb(114, 51, 25) ;
-    text-align: center;
-    margin: 10px;
     width: 50%;
+
     
  }
-  .cultivocafe{
-  display: flex;
-  width: auto;
-  
-}
+ .menuD{
+   background-color:rgb(114, 51, 25) ;
+   width: 50%;
+   text-align: center;
+ }
 
+.iconoD{
+   width: 100px;
+}
+ .iconosI{
+   width: 70px;
+ }
 
  .carrito{
     display: flex;
     flex-direction: row;
  }
+
+ .cultivoCafe{
+ text-align: center;
+ }
+ .productosD{
+   width: 50%;
+   padding: 5px;
+ }
+ .localD{
+   width: 50%;
+   padding: 5px;
+ }
  
  footer{
-    background-color: beige;
+   background-color: rgb(204, 178, 137);
     display: flex;
     flex-direction: row;
-    margin: 5px;
     padding: 5px;
  }
