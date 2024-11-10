@@ -2,12 +2,14 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: "Caveat", cursive;
 }
 
 body{
    background-image: url(../img/fondocoffeed.avif);
     background-size: cover;
     font-family: "Caveat", cursive;
+    font-weight: bolder;
 }
  header{
     background-color:rgb(114, 51, 25) ;
@@ -27,16 +29,20 @@ nav{
     font-weight: bolder;
     font-style: normal;
     display: flex;
-   justify-content: space-between;
+    justify-content: space-around;
+    padding: 20px;
+    opacity: 95%;
+    margin-top: 20px;
+  }
+  nav li{
+   margin: 20px;
    padding: 20px;
-   opacity: 95%;
   }
   nav a{
     color: rgb(114, 51, 25) ;
-    margin: 10PX;
-    padding: 10px;
     text-decoration: none;
     font-size: 2rem;
+    padding: 10px;
   }
   nav li :hover{
     background-color: rgb(128, 58, 27);
@@ -45,7 +51,7 @@ nav{
 
   }
  h2{
-    background-color: sienna;
+    background-color:rgb(128, 58, 27);
     opacity: 90%;
     color: beige;
     font-size: larger;
@@ -72,7 +78,7 @@ nav{
     font-weight: bolder;
     font-style: normal;
     font-size: 1.7rem;
-    
+    background-color: sienna;   
  }
  h4{
     color: rgb(128, 58, 27);
@@ -81,6 +87,82 @@ nav{
     font-weight: bolder;
     font-style: normal;
     font-size: 2rem;
+ }
+ main{
+   background-color:rgb(114, 51, 25);
+   opacity: 95%;
+   margin: 0;
+ }
+ .principal{
+   display: flex;
+  justify-content: space-around;
+ }
+
+ .menuS{
+   list-style: none;
+   margin-right: 30px;
+   margin-top: 20px;
+ }
+
+ .carrusel{
+   width: 1000px;
+   height: auto;
+   margin: 50px;
+   overflow: hidden;
+ }
+
+ .carrusel ul{
+   display: flex;
+   padding: 10px;
+   width: 400%;
+   animation: slide 20s infinite alternate ease-in-out;
+   margin-top: 10px;
+   text-align: center;
+ }
+
+ .carrusel li{
+   width: 100%;
+   list-style: none;
+   position: relative;
+   border: 10px rgb(128, 58, 27) solid;
+ }
+
+ .textoMenu{
+   position: absolute;
+   text-align: center;
+   padding: 0 250px;
+   top: 250px;
+   color: rgb(128, 58, 27);
+ }
+
+ .textoMenu h3{
+   font-size: 45px;
+   margin-bottom: 35px;
+   width: 200px;
+   border-radius: 5px;
+ }
+
+ .carrusel img{
+   width: 800px;
+   height: 500px;
+ }
+
+ .carrusel p{
+   border-radius: 5px;
+ }
+
+ @keyframes slide{
+   0% {margin-left: 0;}
+   20% {margin-left: 0;}
+
+   25% {margin-left: -100%;}
+   45% {margin-left: -100%;}
+
+   50% {margin-left: -200%;}
+   70% {margin-left: -200%;}
+
+   75% {margin-left: -300%;}
+   100% {margin-left: -300%;}
  }
 
  form{
@@ -92,17 +174,25 @@ nav{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     align-items: center;
-  
+    margin-top: 20px;
 
  }
+
  .formularioA{
     background-color: beige;
     border: 20% chocolate;
     padding: 10px;
     width: 60%;
     margin: 5px;
+    color:rgb(114, 51, 25) ;
+    font-weight: bolder;
+    text-transform: uppercase;
+ }
+
+ .suscripcion{
+   height: 100px;
  }
 
  .formI{
@@ -110,12 +200,14 @@ nav{
    border: 20px chocolate;
    padding: 10px;
    width: 20%;
+   color:rgb(114, 51, 25) ;
+   font-weight: bolder;
+   text-transform: uppercase;
+   margin: 20px;
  }
 
 
- img{
-    width: 180px;
- }
+
  .productosA{
   padding: 5%;
   width: 100%;
@@ -123,45 +215,271 @@ nav{
  .imagenD{
    width: 50%;
  }
+
+ .imagenA{
+   width: 250px;
+   
+ }
 .cafeI{
    width: 100%;
    height: 100%;
   background-color: beige;
 }
- div{
-    background-color:rgb(114, 51, 25) ;
-    width: 50%;
 
-    
- }
  .menuD{
    background-color:rgb(114, 51, 25) ;
-   width: 50%;
+   width: 50%; 
    text-align: center;
  }
 
 .iconoD{
-   width: 100px;
+   width: 90px;
 }
  .iconosI{
    width: 70px;
  }
 
  .carrito{
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
     display: flex;
-    flex-direction: row;
+    contain: paint;
+    justify-content: space-between;
+    color: rgb(168, 121, 88) ;
+    background-color:rgb(114, 51, 25)  ;
+    
  }
+ .carrito .productosCarrito{
+   margin-top: 30px;
+   display: grid;
+   grid-gap: 50px;
+   grid-row-gap:50px; 
+   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+   width: 100%;
+   transition: .3s;
+   padding: 20px;
+   
+ }
+ .carrito .productosCarrito .productoC{
+   max-width: 200px;
+   margin: auto;
+   padding: 10px;
+   border: 3px solid rgb(168, 121, 88) ;
+   border-radius: 10px;
+   padding: 20px;
+   transition: .3s;
+ }
+
+ .productosCarrito .productoC:hover{
+  box-shadow: 0 0 10px beige ;
+  scale: 1.05;
+ }
+
+ .productosCarrito .productoC .imagenCarrito{
+ width: 100%;
+ }
+
+ .productosCarrito .productoC .tituloProducto{
+   display: block;
+   font-weight: bolder;
+   text-align: center;
+   text-transform: uppercase;
+ }
+
+ .productosCarrito .productoC .precioProducto{
+ display: block;
+ text-align: center;
+ font-weight: bolder;
+ font-size: 22px;
+ }
+
+ .productosCarrito .productoC .botonProducto{
+   display: block;
+   margin: 10px ;
+   border: none;
+   background:rgb(168, 121, 88) ;
+   color: rgb(114, 51, 25);
+   padding: 5px 15px;
+   border-radius: 5px;
+   cursor: pointer;
+   text-transform: uppercase;
+   font-weight: bolder;
+   font-size: 13px;
+ }
+
+.carritoCompras{
+   border: 3px solid  rgb(168, 121, 88) ;
+   width: 40%;
+   margin-top: 30px;
+   border-radius: 10px;
+   overflow: hidden;
+   margin-bottom: auto;
+   position: sticky !important;
+   top: 0;
+   transition: .3s;
+   opacity: 0;
+ margin-right: -100%;
+}
+
+.carritoCompras .headerCarrito{
+   background-color: rgb(168, 121, 88);
+   color:  rgb(114, 51, 25);
+   text-align: center;
+   padding: 30px ;
+   width: 100%;
+}
+
+.carritoCompras .carritoItem{
+ display: flex;
+ align-items: center;
+ position: relative;
+padding: 20px;
+}
+
+.carritoCompras .carritoItem img {
+   margin: 20px;
+
+}
+
+.carritoCompras .carritoItem .carritoTitulo{
+   display: block;
+   font-weight: bolder;
+   margin-bottom: 10px;
+   text-transform: uppercase;
+}
+
+.carritoCompras .carritoItem .selectorCantidad{
+   display: inline-block;
+   margin-right: 25px;
+}
+
+.carritoCompras .carritoItem .carritoCantidad{
+   border: none;
+   font-size: 18px;
+   background: transparent;
+   display: inline-block;
+   width: 30px;
+   padding: 5px;
+   text-align: center;
+   color: beige;
+}
+
+.carritoCompras .carritoItem .selectorCantidad i{
+   font-size: 18px;
+   width: 32px;
+   height: 32px;
+   line-height: 32px;
+   text-align: center;
+   border-radius: 50%;
+   
+   cursor: pointer;
+}
+ .sumarCantidad{
+   border-radius: 50%;
+   border: 3px solid rgb(168, 121, 88);
+ }
+  .restarCantidad{
+   border-radius: 50%;
+   border: 3px solid rgb(168, 121, 88);
+ }
+  
+
+.carritoCompras .carritoItem .carritoPrecio{
+   font-weight: bolder;
+   display: inline-block;
+   font-size: 18px;
+   margin-bottom: 5px;
+   padding: 10px;
+}
+.carritoCompras .carritoItem .botonEliminar{
+   color: rgb(168, 121, 88);
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   border-radius: 50%;
+   border: 3px solid rgb(168, 121, 88);
+   cursor: pointer;
+   display: block;
+   background: transparent;
+  position: absolute;
+bottom: 0;
+ 
+   
+}
+
+.carritoCompras .carritoItem .botonEliminar i{
+   pointer-events: none;
+}
+
+.carritoTotal{
+   background-color:rgb(168, 121, 88) ;
+   padding: 30px;
+   width: 100%;
+}
+
+.carritoTotal .fila{
+   display: block;
+   font-size: 22px;
+   font-weight: bolder;
+   margin: 10px;
+   width: 100%;
+   padding: 10px;
+   justify-content: center;
+}
+.carritoTotal .botonPagar{
+   display: block;
+   width: 100%;
+   border: none;
+   background-color: beige;
+   color:  rgb(114, 51, 25);
+   border-radius: 5px;
+   font-size: 18px;
+   padding: 20px;
+   justify-content: center;
+   cursor: pointer;
+   transition: .3s;
+}
+
+.carritoTotal .botonPagar:hover{
+   scale: 1.05;
+}
 
  .cultivoCafe{
  text-align: center;
+ display: inline-flex;
+ margin-left: 150px;
  }
+
  .productosD{
-   width: 50%;
+   width: 400px;
+   height: 400px;
    padding: 5px;
  }
+
+
+ .locales{
+ text-align: center;
+ justify-content: center;
+ }
+
  .localD{
    width: 50%;
    padding: 5px;
+ }
+
+ .formularioD{
+   margin-top: 50px;
+   margin-left: 0;
+   margin-right: 0;
+ }
+
+ .tituloForm{
+   text-align: center;
+  color: beige;
+  background-color:rgb(114, 51, 25) ;
+  opacity: 95%;
  }
  
  footer{
@@ -170,3 +488,21 @@ nav{
     flex-direction: row;
     padding: 5px;
  }
+
+@media only screen and (max-width: 600px){
+  header{
+    width: 100%;
+  }
+  nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .principal{
+    display: flex;
+    flex-direction: column;
+  }
+  .carrusel{
+    width: 100%;
+    padding: 20px;
+  }
+}

@@ -6,8 +6,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="shortcut icon" href="./img/android-chrome-192x192.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/granodecafe.webp" type="image/x-icon">
     <title> DALMA COFFEE </title>
 </head>
 <body>
@@ -15,7 +16,7 @@
         <h1> DALMA COFFEE</h1>
     </header>
     <nav >
-        <img class="iconoD" src="./img/dalma.webp" alt="dalma">
+            <img class="iconoD" src="./img/dalma.webp" alt="dalma">
         <li>
             <a href="index.html">Inicio</a>
         </li>
@@ -30,35 +31,122 @@
         </li>
     </nav>
     <main>
-        <section class="menuD">
-                <h2>
-                    Conoce nuestras ofertas semanales
-                </h2> 
-                <div>
-                    <h3> Menú 1</h3>
-                    <h3> Tu café favorito + Cupcake</h3>
-                    <img class="productosA" src="./img/menu1.jpg" alt="menu1">
-                </div>
-                 <div>
-                    <h3> Menú 2</h3>
-                    <h3> Tu café favorito + </h3>
-                    <img class="productosA" src="./img/menu2.jpg" alt="menu2">
-                 </div>
-                 <div>
-                    <h3> Menú 3</h3>
-                    <h3> Tu café favorito + cookies</h3>
-                    <img class="productosA" src="./img/menu3.jpg" alt="menu3">
-                 </div>
+        <section class="principal">
+            <ul class="menuS" >
+                <li>
+                    <div>
+                        <h3>
+                            Servicio de desayuno
+                        </h3>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>
+                            Te y scones
+                        </h3>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>
+                            Dos nuevos cafes
+                        </h3>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>
+                            Cafe del mes
+                        </h3>
+                    </div>
+                </li>
+            </ul>
+        <section class="carrusel" >
+            <ul>
+                <li>
+                    <img src="./img/menu1.jpg" alt="menu1">
+                    <div class="textoMenu">
+                        <h3> Menu 1 </h3>
+                        <p> Tu cafe favorito (tamaño regular) + Cupcakes</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/menu2.jpg" alt="menu2">
+                    <div class="textoMenu">
+                        <h3> Menu 2 </h3>
+                        <p> Tu cafe favorito (tamaño regular) + Macarons </p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/menu3.jpg" alt="menu3">
+                    <div class="textoMenu">
+                        <h3> Menu 3 </h3>
+                        <p> Tu cafe favorito (tamaño regular) + Mini Budin</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./img/menu4.jpeg" alt="menu4">
+                    <div class="textoMenu">
+                        <h3> Menu 4 </h3>
+                        <p> Tu cafe favorito (tamaño regular) + Cupcake + cookies</p>
+                    </div>
+                </li>
+            </ul>
         </section>
-        <article>
+        <ul class="menuS" >
+            <li>
+                <div>
+                    <h3>
+                        Servicio de desayuno
+                    </h3>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>
+                        Te y scones
+                    </h3>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>
+                        Dos nuevos cafes
+                    </h3>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3>
+                        Cafe del mes
+                    </h3>
+                </div>
+            </li>
+        </ul>
+        </section>
+        <article class="principal">
                 <div>
                     <h3>
                         Encuentra tu ideal
                     </h3>
-                    <img class="imagenD" src="./img/cafeindex.jpg" alt="cafeindex">
+                    <img class="imagenA" src="./img/tipocafe.jpg" alt="tipocafe">
+                </div>
+                <div>
+                    <h3>
+                        Responde la trivia
+                    </h3>
+                    <img  class="imagenA" src="./img/cafecorazon.jpg" alt="cafecorazon">
+                    <label for="pais"> <H2> ¿Donde se invento el cafe?  </H2> </label>
+                    <select  class="formularioA" name="pais" id="">
+                        <option   value="lo">LONDON  </option>
+                        <option   value="to">TOKYO</option>
+                        <option  value="pa"> PARIS</option>
+                        <option  value="ve">VENICE</option>
+                    </select>
                 </div>
         </article>
-        <aside>
+        <aside class="suscripcion">
                 <h2>
                     Suscribite y obtene muchos beneficios
                     <input class="formI" type="email" name="Email" id="">
@@ -79,5 +167,7 @@
 <a href="https://web.whatsapp.com/"> <img class="iconosI" src="./img/whatsapp.png" alt="whatsapp"> </a>
 <a href="https://es-la.facebook.com/"> <img class="iconosI" src="./img/facebook.png" alt="facebook"></a>
     </footer>
+    <script src="./js/script.js"></script>
+   
 </body>
 </html>
