@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Dalma</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">CAFE DALMA</a>
+
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="../index.html" class="nav__link active-link" target="_blank">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">Lo nuevo</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Nuestra historia</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#favorite" class="nav__link">Productos</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#visit" class="nav__link">Locales</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-fill"></i>
+                </div>
+
+                <img class="nav__img-1" src="../assets/img/granodecafe.webp" alt="granodecafe">
+                
+                <img class="nav__img-2" src="../assets/img/granoCafe2.png" alt="dalma">
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-fill"></i>
+            </div>
+        </nav>
+    </header>
+    
+
+
+    
+        
+
+        <div class="login container grid" id="loginAccessRegister">
+
+            <svg class="login__blob" viewBox="0 0 566 840" xmlns="http://www.w3.org/2000/svg">
+                <mask id="mask0" mask-type="alpha">
+                   <path d="M342.407 73.6315C388.53 56.4007 394.378 17.3643 391.538 
+                   0H566V840H0C14.5385 834.991 100.266 804.436 77.2046 707.263C49.6393 
+                   591.11 115.306 518.927 176.468 488.873C363.385 397.026 156.98 302.824 
+                   167.945 179.32C173.46 117.209 284.755 95.1699 342.407 73.6315Z"/>
+                </mask>
+             
+                <g mask="url(#mask0)">
+                   <path d="M342.407 73.6315C388.53 56.4007 394.378 17.3643 391.538 
+                   0H566V840H0C14.5385 834.991 100.266 804.436 77.2046 707.263C49.6393 
+                   591.11 115.306 518.927 176.468 488.873C363.385 397.026 156.98 302.824 
+                   167.945 179.32C173.46 117.209 284.755 95.1699 342.407 73.6315Z"/>
+             
+                   <image class="login__img" href="../assets/img/fondoDalma.jpg"/>
+                </g>
+             </svg>
+
+
+
+            <div class="login__access">
+                <h2 class="login__title">
+                Accede a tu cuenta 
+                </h2>
+
+                <div class="login__area">
+                    <form class="login__form" action="">
+                        <div class="login__content grid">
+
+                            <div class="login__box">
+                                <input id="email"  required placeholder=""  class="login__input" type="email">
+                                <label class="login__label" for="email">Email</label>
+                                <i class="ri-mail-fill login__icon"></i>
+
+                            </div>
+
+                            <div class="login__box">
+                                <input id="password"  required placeholder=""  class="login__input" type="password">
+                                <label class="login__label" for="password">Contraseña</label>
+                                <i class="ri-eye-off-fill login__icon login__password" id="loginPassword"></i>
+
+                            </div>
+                        </div>
+
+                        <a class="login__forgot" href="#">¿Olvidaste tu contraseña?</a>
+
+                        <button type="submit" class="login__button">
+                        Ingresar
+                        </button>
+                    </form>
+
+                    <div class="login__social">
+                        <p class="login__social-title">
+                         O inicia sesión con
+                        </p>
+                        <div class="login__social-links">
+
+                            <a href="#" class="login__social-link">
+                                <img class="login__social-img" src="../assets/img/google.png" alt="google">
+                            </a>
+
+                            <a href="#" class="login__social-link">
+                                <img class="login__social-img" src="../assets/img/facebook.svg" alt="google">
+                            </a>
+
+                            <a href="#" class="login__social-link">
+                                <img class="login__social-img" src="../assets/img/apple_dark.svg" alt="google">
+                            </a>
+                        </div>
+                    </div>
+
+                    <p class="login__switch">
+                     ¿No tienes cuenta? 
+                     <button id="loginButtonRegister">Crear una cuenta </button>
+                    </p>
+                </div>
+            </div>
+            <div class="login__register"> 
+                <h2 class="login__title">
+                 Crear una nueva cuenta. 
+                </h2>
+
+                <div class="login__area">
+                    <form class="login__form" action="">
+                        <div class="login__content grid">
+                            <div class="login__group grid">
+                                <div class="login__box">
+                                    <input id="names" required placeholder="" class="login__input" type="text">
+                                    <label class="login__label" for="names">Nombres
+                                    </label>
+                                    <i class="ri-id-card-fill login__icon"></i>
+                                </div>
+
+                                <div class="login__box">
+                                    <input id="surnames" required placeholder="" class="login__input" type="text">
+                                    <label class="login__label" for="surnames">Apellidos
+                                    </label>
+                                    <i class="ri-id-card-fill login__icon"></i>
+                                </div>
+
+                                <div class="login__box">
+                                    <input id="emailCreate" required placeholder="" class="login__input" type="email">
+                                    <label class="login__label" for="emailCreate">Email
+                                    </label>
+                                    <i class="ri-mail-fill login__icon"></i>
+                                </div>
+
+                                <div class="login__box">
+                                    <input id="passwordCreate" required placeholder="" class="login__input" type="password">
+                                    <label class="login__label" for="passwordCreate">Contraseña
+                                    </label>
+                                    <i class="ri-eye-off-fill login__icon login__password" id="loginPasswordCreate"></i>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="login__button">Crear Cuenta</button>
+
+
+
+                        </div>
+
+                    </form>
+                    <p class="login__switch">
+                        ¿Ya tienes cuenta?
+                        <button id="loginButtonAccess">Iniciar sesión</button>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+
+   
+
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <a class="footer__logo" href="#">CAFE DALMA</a>
+                <p class="footer__description"> ¡Ven y descubre por qué somos el lugar donde los sueños y el café se encuentran! </p>
+            </div>
+
+            <div class="footer__content grid">
+                <div>
+                    <h3 class="footer__title">Dirección</h3>
+                    <ul class="footer__list">
+                        <li>
+                            <address class="footer__info"> AV Santa Fe 3250 <br> Buenos Aires  Aregntina </address>
+                        </li>
+
+                        <li>
+                            <address class="footer__info">9AM - 11PM</address>
+                        </li>
+                    </ul>
+                </div>
+            
+
+          
+                <div>
+                    <h3 class="footer__title">Hablemos!</h3>
+                    <ul class="footer__list">
+                        <li>
+                            <address class="footer__info">dalmacafe20@gmail.com</address>
+                        </li>
+
+                        <li>
+                            <address class="footer__info">112236373536</address>
+                        </li>
+
+                        <li>
+                            <a class="footer__contact" href="../pages/contacto.html" target="_blank">Escríbenos</a>
+                        </li>
+                    </ul>
+                </div>
+            
+
+          
+                <div>
+                    <h3 class="footer__title">Conectemos</h3>
+                   <div class="footer__social">
+
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="ri-facebook-circle-fill"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                   </div>
+                </div>
+            </div>
+
+            <img class="footer__img-1" src="../assets/img/granodecafe.webp" alt="">
+            <img class="footer__img-2" src="../assets/img/granoCafe2.png" alt="">
+        </div>
+
+        <span class="footer__copy">
+       CAFE DALMA🤎 <br>  &#169;  Todos los derechos reservados
+        </span>
+    </footer>
+
+   <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-double-fill"></i>
+   </a>
+
+   <script src="../js/scrollreveal.min.js"></script>
+</body>
+   <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+    <script src="../js/script.js"></script>
+
+</html>
