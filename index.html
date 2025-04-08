@@ -6,12 +6,13 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/img/granodecafe.webp" type="image/x-icon">
     <title>Dalma</title>
 </head>
 <body>
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">CAFE DALMA</a>
+            <a href="#home" class="nav__logo">CAFE DALMA</a>
 
 
             <div class="nav__menu" id="nav-menu">
@@ -42,6 +43,15 @@
                             <i class="ri-user-fill user__home"></i>
                         </a>
                     </li>
+
+                    <li class="nav__item">
+                        <div id="icono-carrito" class="carrito-icono">
+                            <i class="ri-shopping-cart-2-fill user__home"></i>
+                            <span id="contador-carrito">0</span> <!-- Muestra la cantidad de productos en el carrito -->
+                        </div>
+                    </li>
+
+
                 </ul>
 
                 <div class="nav__close" id="nav-close">
@@ -52,7 +62,7 @@
                 
                 <img class="nav__img-2" src="./assets/img/granoCafe2.png" alt="dalma">
             </div>
-
+       
             <div class="nav__toggle" id="nav-toggle">
                 <i class="ri-menu-fill"></i>
             </div>
@@ -185,76 +195,99 @@ Illy es una marca mundialmente reconocida por su compromiso con la calidad, y su
             <div class="favorite__container container grid">
 
                 <article class="favorite__card">
-                    <img class="favorite__img" src="./assets/img/bolsaCafe1.png" alt="bolsacafe1">
-                    <div class="favorite__data">
-                        <h2 class="favorite__title">Dalma Gold</h2>
-                        <span class="favorite__subtitle">Café Torrado</span>
-                        <h3 class="favorite__price">$30.000</h3>
+                    <div class="producto" data-nombre="Dalma Gold" data-precio="30000">
+                        <img class="favorite__img" src="./assets/img/bolsaCafe1.png" alt="bolsacafe1">
+                        <div class="favoriste__data">
+                            <h2 class="favorite__title">Dalma Gold</h2>
+                            <span class="favorite__subtitle">Café Torrado</span>
+                            <h3 class="favorite__price">$30.000</h3>
+                        </div>
+                        <button class="favorite__button button agregar">
+                            <i class="ri-add-large-fill"></i>
+                        </button>
                     </div>
-                    <button class="favorite__button button">
-                        <i class="ri-add-large-fill"></i>
-                    </button>
                 </article>
 
                 <article class="favorite__card">
-                    <img class="favorite__img" src="./assets/img/bolsaCafe2.png" alt="bolsacafe1">
-                    <div class="favorite__data">
-                        <h2 class="favorite__title">Dalma Sweet</h2>
-                        <span class="favorite__subtitle">Cafe instantaneo </span>
-                        <h3 class="favorite__price">$45.000</h3>
+                    <div class="producto" data-nombre="Dalma Sweet" data-precio="45000">
+                        <img class="favorite__img" src="./assets/img/bolsaCafe2.png" alt="bolsacafe1">
+                        <div class="favorite__data">
+                            <h2 class="favorite__title ">Dalma Sweet</h2>
+                            <span class="favorite__subtitle">Cafe instantaneo </span>
+                            <h3 class="favorite__price ">$45.000</h3>
+                        </div>
+                        <button class="favorite__button button  agregar">
+                            <i class="ri-add-large-fill"></i>
+                        </button>
                     </div>
-                    <button class="favorite__button button">
-                        <i class="ri-add-large-fill"></i>
-                    </button>
                 </article>
 
                 <article class="favorite__card">
-                    <img class="favorite__img" src="./assets/img/bolsaCafe3.png" alt="bolsacafe1">
+                    <div class="producto" data-nombre="Dalma Premiun" data-precio="50000">
+                        <img class="favorite__img" src="./assets/img/bolsaCafe3.png" alt="bolsacafe1">
                     <div class="favorite__data">
-                        <h2 class="favorite__title">Dalma Premium</h2>
+                        <h2 class="favorite__title ">Dalma Premium</h2>
                         <span class="favorite__subtitle">Café Molido</span>
-                        <h3 class="favorite__price">$50.000</h3>
+                        <h3 class="favorite__price ">$50.000</h3>
                     </div>
-                    <button class="favorite__button button">
+                    <button class="favorite__button button agregar">
                         <i class="ri-add-large-fill"></i>
                     </button>
+                    </div>
                 </article>
 
                 <article class="favorite__card">
-                    <img class="favorite__img" src="./assets/img/bolsaCafe4.png" alt="bolsacafe1">
-                    <div class="favorite__data">
-                        <h2 class="favorite__title">Dalma Gold</h2>
-                        <span class="favorite__subtitle">Café Torrado</span>
-                        <h3 class="favorite__price">$30.000</h3>
+                    <div class="producto" data-nombre="Dalma light" data-precio="30000">
+                        <img class="favorite__img" src="./assets/img/bolsaCafe4.png" alt="bolsacafe1">
+                        <div class="favorite__data">
+                            <h2 class="favorite__title ">Dalma light</h2>
+                            <span class="favorite__subtitle">Café Torrado</span>
+                            <h3 class="favorite__price ">$30.000</h3>
+                        </div>
+                        <button class="favorite__button button  agregar">
+                            <i class="ri-add-large-fill"></i>
+                        </button>
                     </div>
-                    <button class="favorite__button button">
-                        <i class="ri-add-large-fill"></i>
-                    </button>
                 </article>
 
                 <article class="favorite__card">
-                    <img class="favorite__img" src="./assets/img/bolsaCafe5.png" alt="bolsacafe1">
+                    <div class="producto" data-nombre="Dalma Classic" data-precio="40000" >
+                        <img class="favorite__img" src="./assets/img/bolsaCafe5.png" alt="bolsacafe1">
                     <div class="favorite__data">
-                        <h2 class="favorite__title">Dalma Classic</h2>
+                        <h2 class="favorite__title ">Dalma Classic</h2>
                         <span class="favorite__subtitle">café en granos</span>
-                        <h3 class="favorite__price">$40.000</h3>
+                        <h3 class="favorite__price ">$40.000</h3>
                     </div>
-                    <button class="favorite__button button">
+                    <button class="favorite__button button agregar">
                         <i class="ri-add-large-fill"></i>
                     </button>
+                    </div>
                 </article>
 
                 <article class="favorite__card">
-                    <img class="favorite__img" src="./assets/img/bolsaCafe6.png" alt="bolsacafe1">
-                    <div class="favorite__data">
-                        <h2 class="favorite__title">Dalma Classic</h2>
-                        <span class="favorite__subtitle">café en granos</span>
-                        <h3 class="favorite__price">$40.000</h3>
+                    <div class="producto" data-nombre="Dalma Zero" data-precio="40000" >
+                        <img class="favorite__img" src="./assets/img/bolsaCafe6.png" alt="bolsacafe1">
+                        <div class="favorite__data">
+                            <h2 class="favorite__title">Dalma Zero</h2>
+                            <span class="favorite__subtitle">café en granos</span>
+                            <h3  class="favorite__price">$40.000</h3>
+                        </div>
+                        <button class="favorite__button button agregar">
+                            <i class="ri-add-large-fill"></i>
+                        </button>
                     </div>
-                    <button class="favorite__button button">
-                        <i class="ri-add-large-fill"></i>
-                    </button>
                 </article>
+
+    <!-- Contenedor del carrito (oculto inicialmente) -->
+    <div id="carrito-contenedor" class="carrito-contenedor">
+        <h2 class="titulo__carrito">Carrito</h2>
+        <ul id="carrito">
+            <!-- Los productos agregados aparecerán aquí -->
+        </ul>
+        <p class="total" id="total">Total: $0</p>
+        <button id="cerrar-carrito">Cerrar</button>
+    </div>
+
             </div>
         </section>
 
@@ -336,7 +369,7 @@ Illy es una marca mundialmente reconocida por su compromiso con la calidad, y su
                         <i class="ri-youtube-fill"></i>
                     </a>
 
-                    <a href="./pages/historia.html">
+                    <a href="./pages/acceso.html">
                         <i class="ri-user-fill"></i>
                     </a>
                     
@@ -365,5 +398,6 @@ Illy es una marca mundialmente reconocida por su compromiso con la calidad, y su
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
     <script src="./js/script.js"></script>
+    <script src="./js/script2.js"></script>
 
 </html>
